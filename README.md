@@ -2,7 +2,7 @@
 ## Documentation String API
 
 ### Description
-Api to parse the given string, it counts upper and lower case letters,
+API to parse the given string, it counts upper and lower case letters,
 digits and special characters.
 
 |type|endpoint|parameter|
