@@ -3,16 +3,16 @@ package com.ppkwu.lab2.analyzer;
 public class StringStats {
 
     private String str;
-    private int numberOfUppercase;
-    private int numberOfLowercase;
+    private int numberOfUpperCase;
+    private int numberOfLowerCase;
     private int numberOfDigits;
     private int numberOfSpecialChars;
 
-    public StringStats(String str, int numberOfUppercase, int numberOfLowercase,
+    public StringStats(String str, int numberOfUpperCase, int numberOfLowerCase,
                        int numberOfDigits, int numberOfSpecialChars) {
         this.str = str;
-        this.numberOfUppercase = numberOfUppercase;
-        this.numberOfLowercase = numberOfLowercase;
+        this.numberOfUpperCase = numberOfUpperCase;
+        this.numberOfLowerCase = numberOfLowerCase;
         this.numberOfDigits = numberOfDigits;
         this.numberOfSpecialChars = numberOfSpecialChars;
     }
@@ -27,19 +27,19 @@ public class StringStats {
     }
 
     public int getNumberOfUppercase() {
-        return numberOfUppercase;
+        return numberOfUpperCase;
     }
 
     public void setNumberOfUppercase(int numberOfUppercase) {
-        this.numberOfUppercase = numberOfUppercase;
+        this.numberOfUpperCase = numberOfUppercase;
     }
 
     public int getNumberOfLowercase() {
-        return numberOfLowercase;
+        return numberOfLowerCase;
     }
 
     public void setNumberOfLowercase(int numberOfLowercase) {
-        this.numberOfLowercase = numberOfLowercase;
+        this.numberOfLowerCase = numberOfLowercase;
     }
 
     public int getNumberOfDigits() {
