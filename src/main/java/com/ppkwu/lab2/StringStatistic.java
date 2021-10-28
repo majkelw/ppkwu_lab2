@@ -12,12 +12,14 @@ public class StringStatistic {
     public StringStatistic analyze(String str){
         this.str = str;
         for(int i = 0; i < str.length();i++){
-            if(Character.isLetter(str.charAt(i)) && Character.isUpperCase(str.charAt(i)))
+            if(Character.isUpperCase(str.charAt(i)))
                 numberOfUppercase++;
-            else if(Character.isLetter(str.charAt(i)) && Character.isLowerCase(str.charAt(i)))
+            else if(Character.isLowerCase(str.charAt(i)))
                 numberOfLowercase++;
             else if(Character.isDigit(str.charAt(i)))
                numberOfDigits++;
+            else if(!Character.isWhitespace(str.charAt(i)))
+                numberOfSpecialChars++;
         }
         return this;
     }
