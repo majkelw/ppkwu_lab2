@@ -1,6 +1,6 @@
-package com.ppkwu.lab2;
+package com.ppkwu.lab2.analyzer;
 
-public class StringStatistic {
+public class StringStats {
 
     private String str;
     private int numberOfUppercase;
@@ -8,21 +8,15 @@ public class StringStatistic {
     private int numberOfDigits;
     private int numberOfSpecialChars;
 
-
-    public StringStatistic analyze(String str){
+    public StringStats(String str, int numberOfUppercase, int numberOfLowercase,
+                       int numberOfDigits, int numberOfSpecialChars) {
         this.str = str;
-        for(int i = 0; i < str.length();i++){
-            if(Character.isUpperCase(str.charAt(i)))
-                numberOfUppercase++;
-            else if(Character.isLowerCase(str.charAt(i)))
-                numberOfLowercase++;
-            else if(Character.isDigit(str.charAt(i)))
-               numberOfDigits++;
-            else if(!Character.isWhitespace(str.charAt(i)))
-                numberOfSpecialChars++;
-        }
-        return this;
+        this.numberOfUppercase = numberOfUppercase;
+        this.numberOfLowercase = numberOfLowercase;
+        this.numberOfDigits = numberOfDigits;
+        this.numberOfSpecialChars = numberOfSpecialChars;
     }
+
 
     public String getStr() {
         return str;
