@@ -12,7 +12,7 @@ public class StringAnalyzer {
                 numberOfLowerCase++;
             else if(Character.isDigit(str.charAt(i)))
                 numberOfDigits++;
-            else if(!Character.isWhitespace(str.charAt(i)))
+            else
                 numberOfSpecialChars++;
         }
         return new StringStats(str, numberOfUpperCase, numberOfLowerCase,
